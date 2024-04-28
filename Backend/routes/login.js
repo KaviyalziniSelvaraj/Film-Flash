@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
 
         if (user) {
             // User found, send success response
-            res.json({ message: 'User found', user: user });
+            res.json({ message: 'User found', userid: user._id });
         } else {
             // User not found, send failure response
             res.status(404).json({ message: 'User not found' });
@@ -44,7 +44,8 @@ router.post('/',async (req,res)=>
     });
     const result = await newuser.save();
     console.log(JSON.stringify(result));
-    res.send(JSON.stringify(result));
+    var userId = loginmodel.findOne({ username: query.name })._id;
+    res.send(JSON.stringify(result,userId));
     
    } catch (error) {
     console.log(error);

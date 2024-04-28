@@ -22,10 +22,10 @@ const App: React.FC = () => {
                     <Route path='/Signup' element={<CustomLayout> <Scrolltotop/><Signup /></CustomLayout>} />
                     <Route path='/Theatreinfo' element={<CustomLayout> <Scrolltotop/><Theatreinfo /></CustomLayout>} />
                     <Route path='/Movies' element={<CustomLayout>  <Scrolltotop/><Movies /></CustomLayout>} />
-                    <Route path='/Seating' element={<CustomLayout>  <Seating /></CustomLayout>} />
-                    <Route path='/Booking' element={<CustomLayout>  <Booking /></CustomLayout>} />
-                    <Route path='/Success' element={<CustomLayout>  <Success /></CustomLayout>} />
-                    <Route path='/Profile' element={<CustomLayout>  <Profile /></CustomLayout>} />
+                    <Route path='/Seating' element={<CustomLayout>  <Scrolltotop/><Seating /></CustomLayout>} />
+                    <Route path='/Booking' element={<CustomLayout>  <Scrolltotop/><Booking /></CustomLayout>} />
+                    <Route path='/Success' element={<CustomLayout>  <Scrolltotop/><Success /></CustomLayout>} />
+                    <Route path='/Profile' element={<CustomLayout>  <Scrolltotop/><Profile /></CustomLayout>} />
                     <Route path='/Orders' element={<CustomLayout> <Scrolltotop/><Orders /></CustomLayout>} />
 
                 </Routes>

@@ -21,7 +21,7 @@ import { Accountstatus } from '../Redux/Seataction';
     <Row justify={'space-around'} style={{paddingTop:50}}>
         <form onSubmit={handleSubmit(async(value:Loginmodel)=>{
             const result=await insertdata(value);
-                    dispatch(Accountstatus());
+                    dispatch(Accountstatus(value.name));
                     nav('/',{replace:true,state:{value,result}});
             })}>
         <Card style={{alignItems:'center'}}>

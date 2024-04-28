@@ -22,7 +22,7 @@ import React from 'react';
            const result= await checkdata(value);
            if(result)
             {
-                dispatch(Accountstatus());
+                dispatch(Accountstatus(value.name));
                 nav('/',{replace:true,state:{value,result}});
             }
            else

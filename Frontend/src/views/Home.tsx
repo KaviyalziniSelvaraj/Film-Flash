@@ -5,7 +5,6 @@ import { data } from "../data/cardlist";
 import Scrolltotop from "../Components/Scrolltotop";
 import React from "react";
 const {Title}=Typography;
-  
   const Home: React.FC = () => {
   return (
     <>

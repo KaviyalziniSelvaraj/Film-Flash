@@ -5,7 +5,8 @@ export const Seataction = (rvalue: number,cvalue:number) => ({
     rpayload: rvalue,
     cpayload: cvalue,
 });
-export const Accountstatus = () => ({
+export const Accountstatus = (name:String) => ({
     type: acctype,
+    uname:name
 });
 

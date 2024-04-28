@@ -1,11 +1,13 @@
-import { Button, Card ,Col,Flex,QRCode,Row,Typography} from "antd"
+import { Button, Card ,Col,Flex,QRCode,Row,Typography, message} from "antd"
 import { useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
-import { btnstateinterface, seatinterface } from "../Redux/Seatreducer";
+import { seatinterface } from "../Redux/Seatreducer";
 import { RootState } from "../Redux/Rootreducer";
+import { bookticket } from "../controllers/booking-controller";
 
 const Booking:React.FC=()=>
 {
+    const name = useSelector((state: RootState) => state.login.name);
     const nav=useNavigate();
     const values=useLocation();
     const movie=values.state.movie;
@@ -15,6 +17,26 @@ const Booking:React.FC=()=>
     const seats:seatinterface[]=values.state.seats;
     const {Text}=Typography;
     const count = useSelector((state: RootState) => state.seat.count);
+    const insertvalue={
+        name:name,
+        movie:movie,
+        theatre:title,
+        showtime:time,
+        date:date,
+        seats:seats,
+        count:count,
+    
+    }
+    const handleButtonClick = async () => {
+        try {
+            const result = await bookticket(insertvalue);
+            message.success('booking successful!');
+        } catch (error) {
+            message.error('failed');
+        }
+        nav('/Success');
+    }
+    
     return(
         <>
             <Row justify={'center'}>
@@ -33,8 +55,7 @@ const Booking:React.FC=()=>
     style={{ height: "auto", maxWidth: "100%", width: "100%" }}
     value={date+time+title}
     />
-            <Button onClick={()=>
-            {nav('/success')}}>PAY ₹{count*150}</Button>
+            <Button onClick={handleButtonClick}>PAY ₹{count*150}</Button>
             </Flex>
         </Card>
         </Col>

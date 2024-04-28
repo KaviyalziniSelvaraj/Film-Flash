@@ -1,11 +1,14 @@
 import { StarFilled } from "@ant-design/icons";
-import { Row ,Typography, Space,  Button, Tag, Breadcrumb, Col, Flex} from "antd";
+import { Row ,Typography, Space,  Button, Tag, Breadcrumb, Col, Flex, message} from "antd";
 import { useLocation, useNavigate } from "react-router-dom";
 import Moviesstyle from "../style/Moviesstyle";
+import { useSelector } from "react-redux";
+import { RootState } from "../Redux/Rootreducer";
 
 const Movies:React.FC=()=>{
     const {Text}=Typography;
     const values=useLocation();
+    const status = useSelector((state: RootState) => state.login.status);
     const {title,rating,genre,certified,bg}=values.state;
     const nav=useNavigate();
     return (<>
@@ -20,7 +23,14 @@ const Movies:React.FC=()=>{
                         </Space>
                         <Breadcrumb items={[{title:certified},{title:genre},{title:"2hr 30min"}]} style={Moviesstyle.text}></Breadcrumb>
                         <Button type="primary" onClick={()=>{
-                            nav('/Theatreinfo',{state:{title,certified,genre}});
+                            if(status)
+                                {
+                                    nav('/Theatreinfo',{state:{title,certified,genre}});
+                                }
+                            else{
+                                message.info('Please Login to continue');
+                            }
+                            
                         }}>BOOK TICKETS</Button>
                 </Flex>
                 </Col>

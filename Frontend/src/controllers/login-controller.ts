@@ -23,7 +23,6 @@ export const checkdata = async (value: Loginmodel) => {
         });
         message.success('Logged in successfully!')
         // Assuming you want to log the success message
-        console.log('Logged in Successfully');
         return true;
         // Or you can take other server-side actions based on the response
         
