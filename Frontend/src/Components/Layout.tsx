@@ -34,7 +34,7 @@ const CustomLayout: React.FC<ICustomLayoutProps> = ({ children }) => {
                     <Header style={{ marginTop: 20, marginBottom: 20, background: isDark ? darkbg : lightbg }}>
 
                         <Row justify={'space-between'}>
-                        <img src='logo1.jpg' style={imgresStyle}></img>
+                        <img src='logoimg.png' style={imgresStyle}></img>
                             <Col xs={1} sm={2} xl={18} lg={12} xxl={12}>
                             <Menu  mode='horizontal' theme='dark' style={{background: isDark ? darkbg : lightbg }}  overflowedIndicator={<MenuOutlined/>}>
                                 <Menu.Item>
@@ -81,7 +81,7 @@ const CustomLayout: React.FC<ICustomLayoutProps> = ({ children }) => {
                     </Content>
                     <Divider />
                     <Footer>
-                        <center>CopyRight @ Kv.Net</center>
+                        <center>CopyRight @ kavi.Net</center>
                     </Footer>
                 </Layout>
             </ConfigProviderWrapper>

@@ -25,34 +25,64 @@
       "sizes": "192x192"
     },
     {
-      "src": "cm.jpg",
-      "type": "image/jpg",
-      "sizes": "192x192"
+      "src": "br.jpeg",
+      "type": "image/jpeg",
+      "sizes": "1080x1350"
     },
     {
-      "src": "logo1.jpg",
-      "type": "image/jpg",
-      "sizes": "192x192"
+      "src": "logoimg.png",
+      "type": "image/png",
+      "sizes": "1080x1350"
     },
     {
       "src": "vvs2.jpg",
       "type": "image/jpg",
-      "sizes": "192x192"
+      "sizes": "1080x1350"
     },
     {
-      "src": "cmbg.jpeg",
+      "src": "bb2.jpg",
       "type": "image/jpg",
-      "sizes": "192x192"
+      "sizes": "1080x1350"
     },
     {
-      "src": "96bg.jpeg",
+      "src": "gbg.jpeg",
       "type": "image/jpg",
-      "sizes": "192x192"
+      "sizes": "1080x1350"
+    },
+    {
+      "src": "ghilli.jpg",
+      "type": "image/jpg",
+      "sizes": "1080x1350"
+    },
+    {
+      "src": "ghilli1.jpg",
+      "type": "image/jpg",
+      "sizes": "1080x1350"
     },
     {
       "src": "vvsbg.jpeg",
       "type": "image/jepg",
-      "sizes": "192x192"
+      "sizes": "1080x1350"
+    },
+    {
+      "src": "black.jpg",
+      "type": "image/jpg",
+      "sizes": "1080x1350"
+    }
+    ,{
+      "src": "premalu.png",
+      "type": "image/png",
+      "sizes": "1080x1350"
+    },
+    {
+      "src": "premalu.jpg",
+      "type": "image/jpg",
+      "sizes": "1080x1350"
+    },
+    {
+      "src": "pbg.jpeg",
+      "type": "image/jepg",
+      "sizes": "1080x1350"
     }
   ],
   "start_url": ".",

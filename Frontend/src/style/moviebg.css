@@ -1,0 +1,30 @@
+/* Default background */
+.background {
+    padding-top: 60px;
+    background-image: url('default_bg.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+  }
+  
+  /* Background for small screens */
+  @media (max-width: 600px) {
+    .background {
+      background-image: url('small_bg.jpg');
+    }
+  }
+  
+  /* Background for medium screens */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .background {
+      background-image: url('medium_bg.jpg');
+    }
+  }
+  
+  /* Background for large screens */
+  @media (min-width: 1025px) {
+    .background {
+      background-image: url('large_bg.jpg');
+    }
+  }
+  

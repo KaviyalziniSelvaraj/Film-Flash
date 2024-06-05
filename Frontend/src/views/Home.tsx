@@ -15,7 +15,7 @@ const {Title}=Typography;
       <img src="AD2.png" ></img>
     </Carousel>
 
-        <Title style={{fontSize:'5'}}>Recommended Movies</Title>
+        <h1 className="pt-10 text-xl px-10 font-bold">RECOMMENDED MOVIES</h1>
         <Space size={"middle"}  >
         <Row>
           {data.map(

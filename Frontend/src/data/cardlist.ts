@@ -1,25 +1,25 @@
 export const data=[{
-    title:'VVS',
-    src:'vvs2.jpg',
-    bg:'vvsbg.jpeg',
+    title:'Ghilli',
+    src:'gbg.jpeg',
+    bg:'ghilli1.jpg',
     genre:'Comedy / drama',
     rating:5,
     certified:'U'
 
 },
 {
-    title:'Captain Miller',
-    src:'cm.jpg',
-    bg:'cmbg.jpeg',
-    genre:'Action',
+    title:'BRAMAYUGAM',
+    src:'br.jpeg',
+    bg:'bb2.jpg',
+    genre:'Thriller',
     rating:3.5,
     certified:'U/A'
 
 },
 {
-    title:'96',
-    src:'96m.jpg',
-    bg:'96bg.jpeg',
+    title:'PREMALU',
+    src:'premalu.jpg',
+    bg:'pbg.jpeg',
     genre:'Romantic / drama',
     rating:4,
     certified:'U'

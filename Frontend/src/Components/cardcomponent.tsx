@@ -28,13 +28,12 @@ const Cardelement: React.FC<cardcontent> = ({ ...props }) => {
   const nav=useNavigate();
   return (
     <>
-    <Row justify='space-around' style={{padding:20}}>
+    <Row justify='space-around' style={{padding:20, paddingLeft:40}}>
       <Card  loading={loading}
-        size='small'
         hoverable
         cover={
          
-          <Image src={src} alt={alt}  height={'25vw'}loading="lazy"></Image>
+          <Image src={src} alt={alt} loading="lazy"></Image>
         }
           onClick={()=>
           {
